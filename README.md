@@ -3,8 +3,9 @@
 
 转自：https://wo.ci/toss/ssincurl-arukas-api-gass.html
 
-## 更新docker一键部署
+注意：这个程序会获取你登录的账号里的所有镜像信息，包括镜像的ID、App Name、Image、Instances、Memory、Endpoint、Port、ENV、CMD所有信息，所以登录的Arukas的账号里除了ss，请不要包含其他含有重要信息的镜像。
 
+## 更新docker一键部署
 
 ```
 docker run -it -p 80:80 -e user=xx@xx.xx -e passwd=yourpassword -e ssname=title jialezi/ss-arukas-api 
