@@ -1,10 +1,20 @@
-# ssincurl-arukas-api
-ssincurl-arukas-api
-
 
 ### 解析arukas容器的映射ip&端口，调用arukas.io API接口实时获取IP和端口
 
 转自：https://wo.ci/toss/ssincurl-arukas-api-gass.html
+
+## 更新docker一键部署
+
+
+```
+docker run -d -e user=xx@xx.xx -e passwd=yourpassword kmm996/ss-arukas-api
+```
+ENV变量
+
+user=你arukas的登录邮箱
+
+passwd=你的密码
+
 
 ## 使用说明：
 
