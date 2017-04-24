@@ -11,6 +11,6 @@ COPY . /var/www/html
 ENV xx@xx.xx xx@xx.xx
 ENV passwd passwd
 
-RUN chmod + x /var/www/html/root/run.sh
+RUN chmod +x /var/www/html/root/run.sh
 
 CMD ["/var/www/html/root/run.sh"]
