@@ -7,7 +7,7 @@
 
 
 ```
-docker run -d -e user=xx@xx.xx -e passwd=yourpassword jialezi/ss-arukas-api
+docker run -it -p 80:80 -e user=xx@xx.xx -e passwd=yourpassword -e ssname=title jialezi/ss-arukas-api 
 ```
 ENV变量
 
@@ -15,7 +15,7 @@ user=你arukas的登录邮箱
 
 passwd=你的密码
 
-ss-name=定义网站的标题
+ssname=定义网站的标题，有空格请用引号
 
 
 ## 使用说明：
