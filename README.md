@@ -15,6 +15,8 @@ user=你arukas的登录邮箱
 
 passwd=你的密码
 
+ss-name=定义网站的标题
+
 
 ## 使用说明：
 
