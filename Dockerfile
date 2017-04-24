@@ -6,4 +6,11 @@ FROM php:5.6-apache
 RUN docker-php-ext-install pdo_mysql
 
 # /var/www/html/ 为 Apache 目录 
-COPY . /var/www/html/
+COPY . /var/www/html
+
+ENV email xxx@xx.xx
+ENV passwd passwd
+
+RUN chmod + x /var/www/html/root/run.sh
+
+CMD ["/var/www/html/root/run.sh"]
