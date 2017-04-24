@@ -14,4 +14,6 @@ ENV ssname jaz-ss
 
 RUN chmod +x /var/www/html/run.sh
 
+EXPOSE 80
+
 CMD ["/var/www/html/run.sh"]
