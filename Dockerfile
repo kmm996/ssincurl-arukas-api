@@ -13,4 +13,4 @@ ENV passwd passwd
 
 RUN chmod +x /var/www/html/run.sh
 
-ENTRYPOINT ["/var/www/html/run.sh"]
+CMD ["bash","/var/www/html/run.sh"]
