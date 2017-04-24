@@ -10,7 +10,7 @@ COPY . /var/www/html
 
 ENV user xx@xx.xx
 ENV passwd passwd
-ENV ss-name ss-name
+ENV ss-name jaz-ss
 
 RUN chmod +x /var/www/html/run.sh
 
