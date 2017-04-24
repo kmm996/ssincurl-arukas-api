@@ -9,7 +9,7 @@
     <meta name="description" content="Online Generation of High-Speed, Secure, Temporary SS Account, Just a few Seconds">
     <meta name="author" content="">
     <link rel="icon" href="">
-    <title>Get A SS</title>
+    <title>Jaz shares SS</title>
     <script src="//cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <script src="//cdn.bootcss.com/vue/2.1.5/vue.js"></script>
     <script src="//cdn.bootcss.com/vue-resource/1.0.3/vue-resource.js"></script>
@@ -32,7 +32,7 @@ color: #f4f3ee;
 <body style="text-align:center;">
 <div id="app">
 <div class="jumbotron">
-            <h1>Get A SS</h1>
+            <h1>Get Jaz SS</h1>
         <p>Online Generation of High-Speed, Secure, Temporary SS Account, Just a few Seconds</p>
  </div>
   <button type="button" class="btn btn-info" @click="newConfig" style="margin-bottom:35px">Generate Now</button>
@@ -54,7 +54,7 @@ color: #f4f3ee;
             <th>Qrcode</th>
             <td v-for="conf in configs">
                 <div :id="conf.service_port">
-                  <!--<input class="form-control" readonly="true" size="10" type="text" :value="conf.ss_url">--> <!--若需开启URL显示，请取消注释此行-->
+                  <input class="form-control" readonly="true" size="10" type="text" :value="conf.ss_url"> <!--若需开启URL显示，请取消注释此行-->
                   <button class="btn btn-info"@click="showQrCode(conf.ss_url,conf.service_port)" style="margin-bottom: 10px" >Show</button><br />
                 </div>
             </td>
