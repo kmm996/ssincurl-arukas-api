@@ -7,7 +7,7 @@
 
 
 ```
-docker run -d -e user=xx@xx.xx -e passwd=yourpassword kmm996/ss-arukas-api
+docker run -d -e user=xx@xx.xx -e passwd=yourpassword jialezi/ss-arukas-api
 ```
 ENV变量
 
