@@ -16,7 +16,7 @@ get_content($cookie);
 function login($cookie)
 {
     $data = array(
-        'email' => "xx@xx.xx", //此处输入您的arukas登录邮箱
+        'email' => "user", //此处输入您的arukas登录邮箱
         'password' => "passwd" //此处输入您的arukas登录密码
     );
     $loginUrl = "https://app.arukas.io/api/login";
