@@ -27,11 +27,11 @@ ssname=定义网站的标题，有空格请用引号
 
 image: lowid/ss-with-net-speeder:latest
 
-CMD: ssserver -p 端口号 -k 密码 -ase-256-cfb
+CMD: ssserver -p 端口号 -k 密码 -m aes-256-cfb
 
 3.编辑api.php中第19&20行，输入您的arukas登陆邮箱与密码
 
-4.根据需求在index.html的51&57行中开启或关闭密码输出以及SS:// URL输出
+4.根据需求在index.html的51&61行中开启或关闭密码、加密方式输出以及SS:// URL输出
 
 5.上传到网站目录，点击生成即可获取SS账号
 
@@ -39,9 +39,11 @@ CMD: ssserver -p 端口号 -k 密码 -ase-256-cfb
 
 优化说明：
 
+0.1.增加加密方式输出（index.html - line 55） 2017/4/25
+
 1.简单优化页面排版，移除不必要链接
 
-2.取消实际端口、CMD输出，注释SS:// URL显示,（index.html - line 57）
+2.取消实际端口、CMD输出，注释SS:// URL显示,（index.html - line 61）
 
 3.增加密码输出（index.html - line 51）
 
