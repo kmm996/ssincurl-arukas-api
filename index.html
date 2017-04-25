@@ -51,6 +51,10 @@ color: #f4f3ee;
             <td v-for="conf in configs">{{conf.pwd}}</td> <!--若需隐藏密码，请注释此行-->
         </tr>
         <tr>
+            <th>Lock</th>
+            <td v-for="conf in configs">{{conf.lock}}</td> <!--输出加密方式-->
+        </tr>
+        <tr>
             <th>Qrcode</th>
             <td v-for="conf in configs">
                 <div :id="conf.service_port">
